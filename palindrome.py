@@ -93,7 +93,7 @@ class PalindromeCheck:
         for letter in self.word:
             if (i<mid):                                  #In that way, the maximum size of the stack is half the size
                 self.stack.push(letter)                  #of the input rounded down and the maximum size of the queue
-            else:                                        #is half the size of the input rounded up.
+            else:                                        #is half the size of the input rounded up
                 self.queue.enqueue(letter)
             i+=1
 
